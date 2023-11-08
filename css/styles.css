@@ -1,0 +1,214 @@
+.btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+body {
+  background-image: url('../images/jpeg/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.image {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+  font-family:verdana;
+} 
+
+.main {
+  text-align: center;
+}
+
+.load {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  font-family:verdana;
+} 
+
+.more {
+  text-align: center;
+}
+
+.note {
+  font-size: 80%;
+  color: red;
+}
+
+
+#C1, #C2, #C3, #C4, #C5 {
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+ th {
+  padding:5px;
+}
+ th, td {
+  border-color: red;
+}
+
+th {
+  background-color: #96D4D4;
+}
+td {
+  border-style: dashed;
+  text-align: center;
+}
+tr:hover {background-color: #D6EEEE;}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+
+  * {
+  box-sizing: border-box;
+}
+  
+  /* Style the header */
+header {
+  background-color: #666;
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+  
+  /* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+  
+  /* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+  
+  /* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+main {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the content */
+aside {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+  /* Style the footer */
+footer {
+  background-color: #777;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+.first {
+  float: left;
+  width: 20%;
+
+}
+.middle {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.last {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .middle {
+    width: 80%;
+    padding: 0;
+  }
+  .last {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .first, .middle, .last {
+    width: 100%;
+  }
+}
