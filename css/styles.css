@@ -110,9 +110,9 @@ tr:nth-child(even) {
   
   /* Style the header */
 header {
-  background-color: #666;
-  padding: 8px;
-  text-align: center;
+  background-color: rgba(50, 63, 29, 0.2);
+  padding: 10px;
+  /*text-align: center;*/
   color: white;
 }
   
